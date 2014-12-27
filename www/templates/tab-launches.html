@@ -1,0 +1,18 @@
+<ion-view view-title="Launches">
+    <ion-content  class="padding">
+
+        <a data-ng-repeat="launch in launches" href="#/tab/launch/{{launch.name}}">
+        <div class="list card">
+            <div class="item item-divider">{{launch.name}}</div>
+            <div class="item item-body">
+
+                <div>
+                    <i class="icon ion-arrow-up-a" style="color: #0c63ee;"></i>
+                    Avg: 15kph
+                    Gst: 25kph
+                </div>
+            </div>
+        </div>
+</a>
+    </ion-content>
+</ion-view>
