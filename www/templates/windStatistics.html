@@ -1,0 +1,23 @@
+<div>
+    <table class="table">
+        <thead>
+        <tr>
+            <th></th>
+            <th>Freq</th>
+            <th>Average</th>
+            <th>Gust</th>
+        </tr>
+        </thead>
+        <tr data-ng-repeat="stat in statistics.data">
+            <td><i data-ng-class="'ion-arrow-up-a dir-' + stat.cardinalDirection.toLowerCase()"
+                   style="vertical-align: middle;"></i> {{stat.cardinalDirection}}
+            </td>
+            <td>{{(stat.count / statistics.numberOfReadings) * 100 | number:1}}%</td>
+            <td>
+                {{stat.average| number:1}}kph
+            </td>
+            <td>{{stat.max| number:1}}kph</td>
+        </tr>
+    </table>
+    <error-message error="error"></error-message>
+</div>

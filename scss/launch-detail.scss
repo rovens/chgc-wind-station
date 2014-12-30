@@ -9,3 +9,84 @@
 .pink {
   background-color: pink;
 }
+
+
+.dir-n {
+  @extend .dir;
+  -webkit-transform: rotate(180deg);
+}
+
+.dir-nne {
+  @extend .dir;
+  -webkit-transform: rotate(202.5deg);
+}
+
+.dir-ne {
+  @extend .dir;
+  -webkit-transform: rotate(225deg);
+}
+
+.dir-ene {
+  @extend .dir;
+  -webkit-transform: rotate(247.5deg);
+}
+
+.dir-e {
+  @extend .dir;
+  -webkit-transform: rotate(270deg);
+}
+
+.dir-ese {
+  @extend .dir;
+  -webkit-transform: rotate(292.5deg);
+}
+
+.dir-se {
+  @extend .dir;
+  -webkit-transform: rotate(315deg);
+}
+
+.dir-sse {
+  @extend .dir;
+  -webkit-transform: rotate(337.5deg);
+}
+
+.dir-s {
+  @extend .dir;
+  -webkit-transform: rotate(360deg);
+}
+
+.dir-ssw {
+  @extend .dir;
+  -webkit-transform: rotate(22.5deg);
+}
+
+.dir-sw {
+  @extend .dir;
+  -webkit-transform: rotate(45deg);
+}
+
+.dir-wsw {
+  @extend .dir;
+  -webkit-transform: rotate(67.5deg);
+}
+
+.dir-w {
+  @extend .dir;
+  -webkit-transform: rotate(90deg);
+}
+
+.dir-wnw {
+  @extend .dir;
+  -webkit-transform: rotate(112.5deg);
+}
+
+.dir-nw {
+  @extend .dir;
+  -webkit-transform: rotate(135deg);
+}
+
+.dir-nnw {
+  @extend .dir;
+  -webkit-transform: rotate(157.5deg);
+}

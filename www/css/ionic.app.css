@@ -7023,3 +7023,51 @@ a.button {
 
 .pink {
   background-color: pink; }
+
+.dir-n {
+  -webkit-transform: rotate(180deg); }
+
+.dir-nne {
+  -webkit-transform: rotate(202.5deg); }
+
+.dir-ne {
+  -webkit-transform: rotate(225deg); }
+
+.dir-ene {
+  -webkit-transform: rotate(247.5deg); }
+
+.dir-e {
+  -webkit-transform: rotate(270deg); }
+
+.dir-ese {
+  -webkit-transform: rotate(292.5deg); }
+
+.dir-se {
+  -webkit-transform: rotate(315deg); }
+
+.dir-sse {
+  -webkit-transform: rotate(337.5deg); }
+
+.dir-s {
+  -webkit-transform: rotate(360deg); }
+
+.dir-ssw {
+  -webkit-transform: rotate(22.5deg); }
+
+.dir-sw {
+  -webkit-transform: rotate(45deg); }
+
+.dir-wsw {
+  -webkit-transform: rotate(67.5deg); }
+
+.dir-w {
+  -webkit-transform: rotate(90deg); }
+
+.dir-wnw {
+  -webkit-transform: rotate(112.5deg); }
+
+.dir-nw {
+  -webkit-transform: rotate(135deg); }
+
+.dir-nnw {
+  -webkit-transform: rotate(157.5deg); }

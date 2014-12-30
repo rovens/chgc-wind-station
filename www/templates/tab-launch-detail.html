@@ -1,17 +1,22 @@
-<ion-view view-title="Tamborine">
-    <ion-content class="padding">
+<ion-view view-title="{{station|capitalize}}">
+    <ion-nav-buttons side="secondary">
+        <button class="button" ng-click="togglePeriod()">
+            {{period === 'last-20-minutes'? '20 minutes' : '1 hour'}}
+        </button>
+    </ion-nav-buttons>
+    <ion-content>
         <ion-slide-box active-slide="myActiveSlide">
             <ion-slide>
-                <div style="height: 300px" class="box blue">
+                {{windroseData.start}}
+                <wind-rose station="station" title="Wind Rose" period="period"></wind-rose>
+            </ion-slide>
+            <ion-slide>
+                <wind-speed station="station" title="Wind Speed" period="period"></wind-speed>
+            </ion-slide>
+            <ion-slide>
+                <!--<wind-statistics station="station" title="Wind Statistics" period="period"></wind-statistics>-->
+            </ion-slide>
 
-                </div>
-            </ion-slide>
-            <ion-slide>
-                <div style="height: 300px" class="box yellow"><h1>YELLOW</h1></div>
-            </ion-slide>
-            <ion-slide>
-                <div style="height: 300px" class="box pink"><h1>PINK</h1></div>
-            </ion-slide>
         </ion-slide-box>
     </ion-content>
 </ion-view>

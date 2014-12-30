@@ -1,0 +1,36 @@
+<div ng-include="'partials/navbar'"></div>
+<div class="row">
+    <div class="col-md-12">
+
+
+        <div class="btn-group pull-right">
+            <button type="button" data-ng-click="setPeriod('last-20-minutes')" class="btn btn-default"
+                    ng-model="radioModel" btn-radio="'Left'">Last 20 Minutes
+            </button>
+            <button type="button" data-ng-click="setPeriod('last-hour')" class="btn btn-default" ng-model="radioModel"
+                    btn-radio="'Middle'">Last Hour
+            </button>
+        </div>
+        <h3>{{station | capitalize}}</h3>
+    </div>
+</div>
+<div class="row">
+    <tile class="col-md-6">
+        <wind-rose station="station" title="'Wind Rose" period="period"></wind-rose>
+    </tile>
+    <tile class="col-md-6">
+        <wind-speed station="station" title="Wind Speed" period="period"></wind-speed>
+    </tile>
+</div>
+<div class="row">
+    <tile title="'ssdf'" class="col-md-12">
+        <wind-statistics period="period" title="Wind Statistics" station="station"></wind-statistics>
+    </tile>
+</div>
+<!--<div class="row">-->
+    <!--<tile class="col-xs-12">-->
+        <!--<div>-->
+            <!--<google-map center="map.center" zoom="map.zoom"></google-map>-->
+        <!--</div>-->
+    <!--</tile>-->
+<!--</div>-->

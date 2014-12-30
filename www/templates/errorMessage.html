@@ -1,0 +1,10 @@
+<div class="chgc-error" data-ng-hide="error === undefined">
+    <i class=" fa fa-5x fa-exclamation-triangle"></i>
+
+    <p>Something went wrong.
+        <a data-ng-hide="detailsVisible" data-ng-click="detailsVisible = !detailsVisible">Show more.</a>
+        <a data-ng-show="detailsVisible" data-ng-click="detailsVisible = !detailsVisible">Show less.</a>
+    </p>
+
+    <p data-ng-show="detailsVisible">{{error.code}}</p>
+</div>

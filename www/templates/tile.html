@@ -1,0 +1,10 @@
+<div class="tile">
+    <div data-ng-hide="title === undefined" class="header">
+        <h4>{{title !== undefined ? (title | capitalize) : ''}} <small data-ng-show="subtitle">{{subtitle}}</small></h4>
+    </div>
+    <div data-ng-transclude class="">
+    </div>
+    <div data-ng-hide="footer === undefined" class="footer">
+        <h6>{{footer}}</h6>
+    </div>
+</div>

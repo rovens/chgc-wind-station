@@ -1,7 +1,7 @@
-angular.module('starter.controllers')
+angular.module('chgc.controllers')
     .controller('DashCtrl', function($scope) {});
 
-angular.module('starter.controllers')
+angular.module('chgc.controllers')
     .controller('LaunchesCtrl', function($scope) {
 
         $scope.launches = [

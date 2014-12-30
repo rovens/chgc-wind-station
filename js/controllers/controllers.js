@@ -1,4 +1,4 @@
-angular.module('starter.controllers')
+angular.module('chgc.controllers')
 .controller('ChatsCtrl', function($scope, Chats) {
   $scope.chats = Chats.all();
   $scope.remove = function(chat) {
